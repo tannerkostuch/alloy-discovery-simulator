@@ -1,0 +1,458 @@
+{
+ "about": "Ten well-known alloys with typical handbook values, rounded - an EXAMPLE of the reference-database format (docs/DATABASE.md), included so the validation can be tried. It is not the 1 482-record database the results in this repository were computed against, and the numbers are not a source: check a handbook before relying on one.",
+ "alloys": [
+  {
+   "id": "cu-c26000",
+   "name": "C26000 cartridge brass (70/30)",
+   "family": "copper",
+   "subfamily": "alpha brass",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Cu",
+      "nominal": 70.0,
+      "balance": true
+     },
+     {
+      "element": "Zn",
+      "nominal": 30.0
+     }
+    ],
+    "notes": "single-phase alpha (fcc) brass"
+   },
+   "properties": {
+    "density_g_cm3": 8.53,
+    "youngs_modulus_gpa": 110,
+    "shear_modulus_gpa": 40,
+    "poissons_ratio": 0.375,
+    "mechanical": [
+     {
+      "condition": "annealed (OS050)",
+      "yield_strength_mpa": 105
+     }
+    ]
+   }
+  },
+  {
+   "id": "cu-c71500",
+   "name": "C71500 copper-nickel 70/30",
+   "family": "copper",
+   "subfamily": "cupronickel",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Cu",
+      "nominal": 69.0,
+      "balance": true
+     },
+     {
+      "element": "Ni",
+      "nominal": 30.0,
+      "min": 29.0,
+      "max": 33.0
+     },
+     {
+      "element": "Fe",
+      "nominal": 0.6,
+      "min": 0.4,
+      "max": 1.0
+     },
+     {
+      "element": "Mn",
+      "nominal": 0.5,
+      "max": 1.0
+     }
+    ],
+    "notes": "fcc solid solution"
+   },
+   "properties": {
+    "density_g_cm3": 8.94,
+    "youngs_modulus_gpa": 150,
+    "shear_modulus_gpa": 57,
+    "poissons_ratio": 0.33,
+    "mechanical": [
+     {
+      "condition": "annealed",
+      "yield_strength_mpa": 140
+     }
+    ]
+   }
+  },
+  {
+   "id": "ss-304",
+   "name": "Type 304 stainless steel",
+   "family": "stainless_steel",
+   "subfamily": "austenitic",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Fe",
+      "balance": true
+     },
+     {
+      "element": "Cr",
+      "nominal": 19.0,
+      "min": 18.0,
+      "max": 20.0
+     },
+     {
+      "element": "Ni",
+      "nominal": 9.25,
+      "min": 8.0,
+      "max": 10.5
+     },
+     {
+      "element": "Mn",
+      "nominal": 1.0,
+      "max": 2.0
+     },
+     {
+      "element": "Si",
+      "nominal": 0.5,
+      "max": 1.0
+     },
+     {
+      "element": "C",
+      "nominal": 0.04,
+      "max": 0.08
+     }
+    ],
+    "notes": "austenite (fcc) retained at room temperature; the carbon is dropped by the simulation (interstitial)"
+   },
+   "properties": {
+    "density_g_cm3": 8.0,
+    "youngs_modulus_gpa": 193,
+    "shear_modulus_gpa": null,
+    "poissons_ratio": 0.29,
+    "mechanical": [
+     {
+      "condition": "annealed",
+      "yield_strength_mpa": 215
+     }
+    ]
+   }
+  },
+  {
+   "id": "al-5083",
+   "name": "5083 aluminium (Al-4.4Mg-0.7Mn)",
+   "family": "aluminium",
+   "subfamily": "5xxx wrought, non-heat-treatable",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Al",
+      "balance": true
+     },
+     {
+      "element": "Mg",
+      "nominal": 4.4,
+      "min": 4.0,
+      "max": 4.9
+     },
+     {
+      "element": "Mn",
+      "nominal": 0.7,
+      "min": 0.4,
+      "max": 1.0
+     },
+     {
+      "element": "Cr",
+      "nominal": 0.15,
+      "min": 0.05,
+      "max": 0.25
+     }
+    ],
+    "notes": "fcc solid solution"
+   },
+   "properties": {
+    "density_g_cm3": 2.66,
+    "youngs_modulus_gpa": 71,
+    "shear_modulus_gpa": 26.4,
+    "poissons_ratio": 0.33,
+    "mechanical": [
+     {
+      "condition": "O (annealed)",
+      "yield_strength_mpa": 145
+     },
+     {
+      "condition": "H116",
+      "yield_strength_mpa": 228
+     }
+    ]
+   }
+  },
+  {
+   "id": "ni-monel-400",
+   "name": "Monel 400 (Ni-31.5Cu)",
+   "family": "nickel",
+   "subfamily": "nickel-copper solid solution",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Ni",
+      "nominal": 66.0,
+      "balance": true
+     },
+     {
+      "element": "Cu",
+      "nominal": 31.5,
+      "min": 28.0,
+      "max": 34.0
+     },
+     {
+      "element": "Fe",
+      "nominal": 1.25,
+      "max": 2.5
+     },
+     {
+      "element": "Mn",
+      "nominal": 1.0,
+      "max": 2.0
+     }
+    ],
+    "notes": "fcc solid solution"
+   },
+   "properties": {
+    "density_g_cm3": 8.8,
+    "youngs_modulus_gpa": 179,
+    "shear_modulus_gpa": 65,
+    "poissons_ratio": 0.32,
+    "mechanical": [
+     {
+      "condition": "annealed",
+      "yield_strength_mpa": 240
+     }
+    ]
+   }
+  },
+  {
+   "id": "ti-6al-4v",
+   "name": "Ti-6Al-4V",
+   "family": "titanium",
+   "subfamily": "alpha-beta",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Ti",
+      "balance": true
+     },
+     {
+      "element": "Al",
+      "nominal": 6.0,
+      "min": 5.5,
+      "max": 6.75
+     },
+     {
+      "element": "V",
+      "nominal": 4.0,
+      "min": 3.5,
+      "max": 4.5
+     },
+     {
+      "element": "Fe",
+      "nominal": 0.2,
+      "max": 0.4
+     },
+     {
+      "element": "O",
+      "nominal": 0.15,
+      "max": 0.2
+     }
+    ],
+    "notes": "alpha (hcp) + beta (bcc); its strength is the two-phase microstructure and oxygen, which the simulation does not model"
+   },
+   "properties": {
+    "density_g_cm3": 4.43,
+    "youngs_modulus_gpa": 114,
+    "shear_modulus_gpa": 44,
+    "poissons_ratio": 0.34,
+    "mechanical": [
+     {
+      "condition": "mill-annealed",
+      "yield_strength_mpa": 880
+     }
+    ]
+   }
+  },
+  {
+   "id": "mg-az31b",
+   "name": "AZ31B magnesium (Mg-3Al-1Zn)",
+   "family": "magnesium",
+   "subfamily": "wrought",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Mg",
+      "balance": true
+     },
+     {
+      "element": "Al",
+      "nominal": 3.0,
+      "min": 2.5,
+      "max": 3.5
+     },
+     {
+      "element": "Zn",
+      "nominal": 1.0,
+      "min": 0.6,
+      "max": 1.4
+     },
+     {
+      "element": "Mn",
+      "nominal": 0.3,
+      "min": 0.2
+     }
+    ],
+    "notes": "hcp"
+   },
+   "properties": {
+    "density_g_cm3": 1.77,
+    "youngs_modulus_gpa": 45,
+    "shear_modulus_gpa": 17,
+    "poissons_ratio": 0.35,
+    "mechanical": [
+     {
+      "condition": "O (annealed sheet)",
+      "yield_strength_mpa": 150
+     }
+    ]
+   }
+  },
+  {
+   "id": "zn-zamak-3",
+   "name": "Zamak 3 (Zn-4Al)",
+   "family": "zinc",
+   "subfamily": "die casting",
+   "composition": {
+    "basis": "wt%",
+    "elements": [
+     {
+      "element": "Zn",
+      "balance": true
+     },
+     {
+      "element": "Al",
+      "nominal": 4.0,
+      "min": 3.5,
+      "max": 4.3
+     },
+     {
+      "element": "Mg",
+      "nominal": 0.035,
+      "min": 0.02,
+      "max": 0.05
+     },
+     {
+      "element": "Cu",
+      "nominal": 0.1,
+      "max": 0.25
+     }
+    ],
+    "notes": "hcp zinc with the Zn-Al eutectic; a two-phase casting in reality"
+   },
+   "properties": {
+    "density_g_cm3": 6.6,
+    "youngs_modulus_gpa": 85,
+    "shear_modulus_gpa": null,
+    "poissons_ratio": null,
+    "mechanical": [
+     {
+      "condition": "as-die-cast",
+      "yield_strength_mpa": 221
+     }
+    ]
+   }
+  },
+  {
+   "id": "hea-cocrfemnni",
+   "name": "CoCrFeMnNi (Cantor alloy)",
+   "family": "high_entropy",
+   "subfamily": "3d transition-metal, equiatomic",
+   "composition": {
+    "basis": "at%",
+    "elements": [
+     {
+      "element": "Co",
+      "nominal": 20.0
+     },
+     {
+      "element": "Cr",
+      "nominal": 20.0
+     },
+     {
+      "element": "Fe",
+      "nominal": 20.0
+     },
+     {
+      "element": "Mn",
+      "nominal": 20.0
+     },
+     {
+      "element": "Ni",
+      "nominal": 20.0
+     }
+    ],
+    "notes": "single-phase fcc"
+   },
+   "properties": {
+    "density_g_cm3": 8.0,
+    "youngs_modulus_gpa": 202,
+    "shear_modulus_gpa": 80,
+    "poissons_ratio": 0.265,
+    "mechanical": [
+     {
+      "condition": "recrystallised, grain size about 50 µm",
+      "yield_strength_mpa": 200
+     }
+    ]
+   }
+  },
+  {
+   "id": "hea-nbmotaw",
+   "name": "NbMoTaW",
+   "family": "high_entropy",
+   "subfamily": "refractory, equiatomic",
+   "composition": {
+    "basis": "at%",
+    "elements": [
+     {
+      "element": "Nb",
+      "nominal": 25.0
+     },
+     {
+      "element": "Mo",
+      "nominal": 25.0
+     },
+     {
+      "element": "Ta",
+      "nominal": 25.0
+     },
+     {
+      "element": "W",
+      "nominal": 25.0
+     }
+    ],
+    "notes": "single-phase bcc"
+   },
+   "properties": {
+    "density_g_cm3": 13.75,
+    "youngs_modulus_gpa": 220,
+    "shear_modulus_gpa": null,
+    "poissons_ratio": null,
+    "mechanical": [
+     {
+      "condition": "as-cast, compression",
+      "yield_strength_mpa": 1058
+     }
+    ]
+   }
+  }
+ ]
+}

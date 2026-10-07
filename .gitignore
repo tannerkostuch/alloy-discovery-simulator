@@ -1,0 +1,24 @@
+# the environment and everything a run writes next to the code
+.venv/
+__pycache__/
+*.pyc
+cache/
+logs/
+ENV_REPORT.txt
+/SMOKE_REPORT.md
+*.tmp
+*.tmp[0-9]*
+
+# a reference database of your own stays out of the repository, and so does what is derived from it
+data/alloys.json
+data/db_features.csv
+data/DB_RULES_CHECK.md
+data/SFE_VALIDATION.md
+results/validation/
+
+# per-candidate result files of a run (the DISCOVERIES.md tables are what is kept)
+results/*/*.json
+
+# interatomic-potential files fetched from elsewhere (NIST and others) are not redistributed here
+potentials/
+*.meam

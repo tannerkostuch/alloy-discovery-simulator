@@ -1,0 +1,17 @@
+# Python 3.11 or 3.12, Linux (the caches use POSIX file locks).
+# PyTorch first, if you want a particular build — the CPU-only wheel is enough and is what the results here were
+# computed with:   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Versions the code has run with (2026-10): torch 2.10 and 2.14, mace-torch 0.3.16, ase 3.29, matminer 0.10.1,
+# scipy 1.17 and 1.18, pandas 2.3, spglib 2.7, e3nn 0.4.4, numpy 2.4.
+torch>=2.2
+mace-torch>=0.3.12
+ase>=3.23
+pymatgen
+matminer>=0.9
+scipy>=1.11
+pandas>=2.0
+numpy
+spglib
+tabulate
+# Optional, only for meam_check.py (LAMMPS with its MEAM package, and the MPI library that wheel links against):
+#   pip install lammps mpich
